@@ -8,15 +8,4 @@ on:
 
 jobs:
   tag-action:
-    runs-on: ubuntu-latest
-    steps:
-      - name: ⤵️ Check out code
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: 🏷 Create new tag
-        uses: valitydev/action-autotag@v1
-
-      - name: ➕ Add additional tags
-        uses: vweevers/additional-tags-action@v1
+    uses: valitydev/base-workflows/.github/workflows/create-new-tag.yaml@v1
