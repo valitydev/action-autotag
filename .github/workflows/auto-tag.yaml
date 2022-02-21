@@ -8,4 +8,4 @@ on:
 
 jobs:
   tag-action:
-    uses: valitydev/base-workflows/.github/workflows/create-new-tag.yaml@v1
+    uses: valitydev/base-workflows/.github/workflows/auto-tag.yaml@v1
