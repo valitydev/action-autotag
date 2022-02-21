@@ -49,3 +49,27 @@ jobs:
             fetch-depth: 0
         - uses: valitydev/action-autotag@v1
 ```
+
+## Combine with [additional-tags-action](https://github.com/marketplace/actions/additional-tags)
+
+```yaml
+name: Combine action-autotag with additional-tags-action
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  tag-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: valitydev/action-autotag@v1
+
+      - uses: vweevers/additional-tags-action@v1
+```
