@@ -1,0 +1,17 @@
+name: Create Tag
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  tag-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⤵️ Check out code
+        uses: actions/checkout@v2
+
+      - name: 🏷 Create new tag
+        uses: valitydev/action-autotag@v1

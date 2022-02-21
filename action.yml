@@ -1,0 +1,17 @@
+name: Auto-create new tag
+description: "Create new tag and push to the repo"
+
+runs:
+  using: composite
+  steps:
+    - name: 🏗 install autotag
+      run: curl -sL https://git.io/autotag-install | sudo sh -s -- -b /usr/bin
+      shell: bash
+
+    - name: ⬆️ Increment version
+      run: autotag
+      shell: bash
+
+    - name: ⤴️ Push new tag
+      run: git push --tags
+      shell: bash
