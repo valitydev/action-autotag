@@ -1,4 +1,4 @@
-# `action-autotag` - **Github Action**
+# `action-autotag` - **Github Action based on [autotag](https://github.com/pantheon-systems/autotag) utlity**
 
 This action automatically increment version tags to a git repo based on commit messages.
 
