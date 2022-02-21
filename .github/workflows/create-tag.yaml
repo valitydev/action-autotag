@@ -17,3 +17,6 @@ jobs:
 
       - name: 🏷 Create new tag
         uses: valitydev/action-autotag@v1
+
+      - name: ➕ Add additional tags
+        uses: vweevers/additional-tags-action@v1
