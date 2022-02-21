@@ -45,5 +45,7 @@ jobs:
     runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
+          with:
+            fetch-depth: 0
         - uses: valitydev/action-autotag@v1
 ```
