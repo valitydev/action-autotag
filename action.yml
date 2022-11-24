@@ -1,5 +1,8 @@
 name: Auto-create new tag
 description: "Create new tag and push to the repo"
+branding:
+  icon: 'tag'
+  color: 'orange'
 
 runs:
   using: composite
