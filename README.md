@@ -1,4 +1,4 @@
-# `action-autotag` - **Github Action based on [autotag](https://github.com/pantheon-systems/autotag) utlity**
+# `action-autotag` - **Github Action based on [autotag](https://github.com/pantheon-systems/autotag) utility**
 
 This action automatically increment version tags to a git repo based on commit messages.
 
@@ -44,7 +44,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v2
+        - uses: actions/checkout@v3
           with:
             fetch-depth: 0
         - uses: valitydev/action-autotag@v1
@@ -65,7 +65,7 @@ jobs:
   tag-action:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
